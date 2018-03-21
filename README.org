@@ -9,7 +9,7 @@
    + Formally, if we let amino acid $r$ be composed of three
      atoms $a_1, a_2, a_3$ and $dist(a)$ be the shortest distance of an atom
      $a$ to the convex hull of the protein, then the buriedness of $r$
-     is equal to $\frac{dist(a_1) + dist(a_2) + dist(a_3)}{3}.
+     is equal to $(dist(a_1) + dist(a_2) + dist(a_3))/3$.
 
 * Why bother with buriedness when we have the ASA?
   + Buriedness by definition does not have 0 values, as opposed to the
