@@ -21,7 +21,7 @@
   structure, suppose it is called =file.pdb=. Just type in the
   terminal:
   #+BEGIN_SRC sh
-$ python buriedness file.pdb > output.csv
+$ python buriedness.py file.pdb > output.csv
   #+END_SRC
 
 * Install
