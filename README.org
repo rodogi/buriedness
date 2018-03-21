@@ -1,0 +1,40 @@
+#+title: get the Buriedness of amino acids within a pdb file
+#+author: Rodrigo Dorantes-Gilardi
+#+date: 2018-03-21
+
+* What is the buriedness of an amino acid?
+   + Is a measure based on the proximity of the amino acid to the
+     /surface/ of the protein.
+   + The surface is modeled by the convex hull of the atomic
+     coordinates of the protein.
+   + Formally, if we let amino acid $r$ be composed of three
+     atoms $a_1, a_2, a_3$ and $dist(a)$ be the shortest distance of an atom
+     $a$ to the convex hull of the protein, then the buriedness of $r$
+     is equal to $\frac{dist(a_1) + dist(a_2) + dist(a_3)}{3}.
+
+* Why bother with buriedness when we have the ASA?
+  + Buriedness by definition does not have 0 values, as opposed to the
+    accessible surface area. This allows to a comparison between
+    /midly buried/ to /buried/ to /very buried/ residues.
+
+* How to use the script?
+  To compute the buriedness in a protein, use the pdb file of the
+  structure, suppose it is called =file.pdb=. Just type in the
+  terminal:
+  #+BEGIN_SRC sh
+$ python buriedness file.pdb > output.csv
+  #+END_SRC
+
+* Install
+  Clone the repository and listo!
+#+BEGIN_SRC sh
+$ git clone https://github.com/rodogi/buriedness.git
+#+END_SRC
+
+* Requirements
+  + [[http://biopython.org/wiki/Download][biopython]]
+  + scipy and numpy
+  + python > 2.7 or > 3.6
+
+* Licence
+  + GNU General Public License v3.0
