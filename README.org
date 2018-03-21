@@ -1,8 +1,7 @@
-#+title: get the Buriedness of amino acids within a pdb file
+#+title: What is the buriedness of an amino acid?
 #+author: Rodrigo Dorantes-Gilardi
 #+date: 2018-03-21
 
-* What is the buriedness of an amino acid?
    + Is a measure based on the proximity of the amino acid to the
      /surface/ of the protein.
    + The surface is modeled by the convex hull of the atomic
